@@ -66,9 +66,9 @@ BA Mathematics \hfill {\em August 2013 - May 2016} \\
 %------------------------------------------------------------
 \begin{rSection}{Relevant Courses and Material Covered}
 \begin{itemize}
-\item \textbf{Current Courses:} probability (measure theory, martingales), R-programming, linear models
+\item \textbf{Current Courses:} Bayesian inference, classical inference, data analysis (R)
 
-\item \textbf{Past Courses:} real analysis (measure theory, basic functional analysis),
+\item \textbf{Past Courses:} linear models (generalized inverses, Gauss-Markov/generalized models) R-programming and computing, probability (measure theory), real analysis (measure theory, basic functional analysis),
 complex analysis, algebra (groups, rings, fields, modules, vector spaces), arithmetic dynamics,
 mathematical cryptography, mathematical statistics, stochastic processes (discrete Markov processes, Poisson processes)
 \end{itemize} 
@@ -85,16 +85,15 @@ mathematical cryptography, mathematical statistics, stochastic processes (discre
 \item A requirement of my masters degree consisted in creating some introductory notes to some open problems in the area of arithmetic dynamics. The focus is centered on introducing the notion of height of algebraic numbers,  potential theory and the interplay between the two. In particular, given some polynomial $\phi \in \Z[z]$ with $deg(\phi) \geq 2$, we can consider the Julia set $\MJ_{\phi}$ of $\phi$, the canonical height $\hat{h}_\phi$ associated with $\phi$ and the equilibrium measure $\mu$ of $\MJ_{\phi}$, that is, the measure that minimizes the energy functional $\int_{\MJ_{\phi}^2}-log|x-y|d\nu^2$ over all Borel probability measures $\nu$ with support in $\MJ_{\phi}$. Then any sequence $(z_n)_{n \in \N} \subset \overline{\Q}$ with $deg(z_n) \rightarrow \infty$ and $\hat{h}_{\phi}(z_n) \rightarrow 0$ as $n \rightarrow \infty$ has the conjugates of $z_n$ equidistributing around $\MJ_\phi$. There are open problems regarding the existence of a lower bound for $\hat{h}_{\phi}(z)$ for $z$ not preperiodic and in some sense bounded, but there is no answer for even simple cases like $\phi(z) = z^2+c$ with $c \in \Z$. I periodically update the notes. (\href{https://github.com/carsonaj/Math/blob/master/Arithmetic%20Dynamics/Arithmetic%20Dynamics%20Notes.pdf}{{\color{blue} creative component}})
 \end{itemize}
 
-{\bf Stochastic Processes:}
+{\bf Programming:}
 \begin{itemize}
-\item I am currently working through \textit{Stochastic Differenetial Equations} by Oksendal to pick up Stochastic Calculus. I am also compiling some notes and working on a program to find optimal policies for Markov decision Processes as a way to learn the material: (\href{https://github.com/carsonaj/Math/blob/master/Optimization/Markov%20Decision%20Processes.pdf}{{\color{blue} Markov Decision Process Notes}})
+\item I am currently working on a C library and a corresponding wrapper in python using ctypes that implements number fields and finite fields and elliptic curves over these fields. After implementing these objects, I will implement the elliptic curve El-Gamal cryptosystem.  (\href{https://github.com/carsonaj/ccalc}{{\color{blue} Number Fields Code}})
 \end{itemize}
 
-{\bf C programming:}
+{\bf Risk:}
 \begin{itemize}
-\item As a way to learn the C language, I wrote some code to implement a basic number field structure that lets you add, multiply and find multiplicative inverses for field elements: (\href{https://github.com/carsonaj/number-fields}{{\color{blue} Number Fields Code}})
+	\item I am currently writing up some notes on risk and different tools to assess it along with some case studies. Currently in a very early stage. (\href{https://github.com/carsonaj/Math/blob/master/Portfolio%20Theory/Portfolio%20Theory%20Notes.pdf}{{\color{blue} Risk}})
 \end{itemize}
-
 
 
 \end{rSection}
@@ -152,8 +151,7 @@ mathematical cryptography, mathematical statistics, stochastic processes (discre
 \begin{itemize}
 \item Python (intermediate)
 \item C (intermediate)
-\item R (basic)
-\item SQL (basic)
+\item R (intermediate)
 \end{itemize}
 
 {\bf Languages}
