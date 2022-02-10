@@ -1,0 +1,58 @@
+
+\PassOptionsToPackage{dvipsnames}{xcolor}
+\documentclass[10pt,a4paper]{altacv}
+
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{lato}
+\usepackage{subfiles}  
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+%% sample.bib contains your publications
+
+\usepackage[colorlinks]{hyperref}
+\addbibresource{papers.bib}
+\begin{document}
+
+
+\name{Carson James}
+\tagline{Work Authorization: US Citizen}
+
+\personalinfo{
+  %\homepage{}
+  \phone{+1 405 315 5881}
+  \email{carson.a.james@gmail.com}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\cvsection[page1sidebar]{Experience}
+\import{sections/}{experience.tex}
+
+\cvsection[page2sidebar]{Skills}
+\import{sections/}{skills.tex}
+\import{sections/}{programming.tex}
+\import{sections/}{languages.tex}
+
+%\cvsection[page2sidebar]{Publications}
+%\import{sections/}{publications.tex}
+
+
+
+
+\end{document}
